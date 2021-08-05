@@ -10,8 +10,9 @@ check_sm_spool.sh - A plugin to call the built in API on a smartermail server to
 - -w number of queued emails that will trigger a warning alert
 - -c number of queued emails that will trigger a critical alert
 
-## Optinal command line option
+## Optional command line option
 - -q The queue to check default | waiting | virus | spam
+- the default queue/spool will be used if option isn't provided. See SmarterMail documentation (https://help.smartertools.com/SmarterMail/current/topics/systemadmin/manage/spool/managespool.aspx) for queue descriptions 
 
 ## Returns
 - OK - $x messages in the $y queue. (if $x is below both thresholds)
